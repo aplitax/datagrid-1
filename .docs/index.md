@@ -76,6 +76,8 @@ class SimplePresenter extends BasePresenter
 
 		$grid->setDataSource($this->db->select('*')->from('ublaboo_example'));
 		$grid->addColumnText('name', 'Name');
+		
+		return $grid;
 	}
 
 }
